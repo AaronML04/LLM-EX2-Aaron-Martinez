@@ -213,10 +213,15 @@
           }
         }
         .precio-min {
+          color: rgb(0, 115, 255);
           font-weight: bolder;
           display: flex;
           align-items: center;
           gap: 5px;
+
+          .fa-bicycle {
+            color: red;
+          }
         }
         .envio {
           font-weight: bolder;
@@ -224,6 +229,26 @@
           align-items: center;
           gap: 5px;
         }
+      }
+    }
+
+    .paginas {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+      border: 0px;
+
+      div {
+        border: 1px solid rgb(20, 20, 19);
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      div:hover {
+        background-color: orange;
+        color: white;
       }
     }
   }
