@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header-top">
+      <h1>PapeaMe</h1>
+      <div class="buscar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      <input
+        type="text"
+        placeholder="     Busca por restaurante o comida: Ej.Pizza, Hamburguesa"
+      />
+      </div>
+      <nav class="navegacion">
+        <ul class="lista-navegacion">
+          <li class="dropdown">
+                <div class="dropdown-btn">
+                    <i class="fa-solid fa-globe"></i>
+                    <a href="#">Idiomas</a> 
+                </div>
+                <ul class="dropdown-content">
+                    <li><a href="#">Càtalan</a></li>
+                    <li><a href="#">Castellano</a></li>
+                    <li><a href="#">English</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="dropdown-btn">
+                    <i class="fa-regular fa-circle-question">
+                    </i><a href="#">Ayuda</a>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown-btn">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="#">Iniciar Sesión</a>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown-cesta">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <a>Cesta (0)</a>
+                </div>
+            </li>
+        </ul>
+      </nav>
+    </header>
+
+    <header class="header-low-top">
+      <h2>¡Pide comida a domicilio!</h2>
+      <span>
+        Encuentra los mejores restaurantes cerca de ti. ¡Tenemos 12 locales
+        abiertos ahora mismo!
+      </span>
+    </header>
+
+    <main class="main-container">
+      <p>Home > Busqueda > 07141 Marratxi</p>
+      <aside class="filtrar">
+        <h2>Filtrar resultados</h2>
+        <h3>Ordernar por:</h3>
+        <div>
+          <p>Mejor Coincidencia</p>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <h3>Cocina:</h3>
+        <div class="tipo-cocina">
+          <input type="checkbox" id="Hamburguesa" />
+          <label for="Hamburguesa">Hamburguesa (5)</label>
+          <input type="checkbox" id="Pizza" />
+          <label for="Pizza">Pizza (3)</label>
+          <input type="checkbox" id="Asiatica" />
+          <label for="Asiatica">Asiatica (2)</label>
+          <input type="checkbox" id="Española" />
+          <label for="Española">Española (1)</label>
+        </div>
+        <h3>Caracteristicas:</h3>
+        <div class="caracteristicas">
+            <input type="checkbox" id="gastos">
+            <label for="gastos">Sin gastos de envio</label>
+            <input type="checkbox" id="ofertas">
+            <label for="ofertas">Ofertas</label>
+        </div>
+        <h3>Usuario premiu:</h3>
+        <div class="usuario-premiu">
+            <input type="radio" id="si">
+            <label for="si">SÍ</label>
+            <input type="radio" id="no">
+            <label for="no">NO</label>
+      </aside>
+      <section class="container-grid">
+        <article class="hamburguesa">
+            <div class="precio1">Envio 2.99$</div>
+            <img src="./img/hamburguesa.webp" alt="Hamburguesa"></img>
+            <h2>Burger Shack Marratxi</h2>
+            <span>Hamburguesa, Americana, Patatas fritas</span>
+            <div class="puntuaciones">
+                <div class="valoracion">
+                    <i class="fa-solid fa-star"></i>
+                    <p>4.5/5</p>
+                </div>
+                <div class="envio">
+                    <i class="fa-solid fa-star"></i>
+                    <p>30-40 min</p>
+                </div>
+                <div class="precio-min">
+                    <i class="fa-solid fa-star"></i>
+                    <p>Mín. 10$</p>
+                </div>
+            </div>
+        </article>
+        <article class="pizza">
+            <div class="precio2">Envio gratis</div>
+            <img src="./img/pizzas.webp" alt="pizzas"></img>
+            <h2>Pizzeria II Forno</h2>
+            <span>Pizza, Italiana,Pastas</span>
+            <div class="puntuaciones">
+                <div class="valoracion">
+                    <i class="fa-solid fa-star"></i>
+                    <p>4.8/5</p>
+                </div>
+                <div class="envio">
+                    <i class="fa-solid fa-star"></i>
+                    <p>20-30 min</p>
+                </div>
+                <div class="precio-min">
+                    <i class="fa-solid fa-star"></i>
+                    <p>Mín. 12$</p>
+                </div>
+            <div>
+        </article>
+        <article class="sushi">
+            <div class="precio3">Envio 1.99$</div>
+            <img src="./img/sushi.webp" alt="sushi"></img>
+            <h2>Sushi Go!</h2>
+            <span>Japonesa, Sushi, Noodles</span>
+            <div class="puntuaciones">
+                <div class="valoracion">
+                    <i class="fa-solid fa-star"></i>
+                    <p>4.2/5</p>
+                </div>
+                <div class="envio">
+                    <i class="fa-solid fa-star"></i>
+                    <p>45-55 min</p>
+                </div>
+                <div class="precio-min">
+                    <i class="fa-solid fa-star"></i>
+                    <p>Mín. 15$</p>
+                </div>
+            </div>
+        </article>
+        <article class="chino">
+            <div class="precio4">Envio 1.99$</div>
+            <img src="./img/chino.webp" alt="chino"></img>
+            <h2>Chino Chaoli The king</h2>
+            <span>China, Arroz, Fideos</span>
+            <div class="puntuaciones">
+                <div class="valoracion">
+                    <i class="fa-solid fa-star"></i>
+                    <p>4.6/5</p>
+                </div>
+                <div class="envio">
+                    <i class="fa-solid fa-star"></i>
+                    <p>35-45 min</p>
+                </div>
+                <div class="precio-min">
+                    <i class="fa-solid fa-star"></i>
+                    <p>Mín. 8$</p>
+                </div>
+            </div>
+        </article>
+        <article class="paginas">
+            <div><i class="fa-solid fa-angles-left"></i></div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div><i class="fa-solid fa-angles-right"></i></div>
+        </article>
+      </section>
+    </main>
+    <footer>
+        <div class="footer-left">
+            <h2>¡Suscribete a nuestra Newsletter!</h2>
+            <span>Recibe las mejores ofertas y noticias de Marratxi directamente en tu email.</span>
+            <div class="suscripcion">
+                <input type="email" placeholder="Introduce tu email"></input>
+                <button>Suscribirse</button>
+            </div>
+        </div>
+        <div class="footer-right">
+            <h2>Servicio al Cliente</h2>
+            <ul>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Terminos y Condiciones</a></li>
+            </ul>
+        </div>
+        <div class="footer-low">
+            <span>@2024 PapeaMe - Proyecto Web. Todos los derechos reservados.</span>
+        </div>
+    </footer>
+  </body>
+</html>
